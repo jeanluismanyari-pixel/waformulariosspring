@@ -35,7 +35,7 @@ public class ImcController {
         diagnostico="obesidad morbida";
     }
     model.addAttribute("mostrarMensaje", true);
-    model.addAttribute("resultado", "Su valor IMC es" +String.format("%.2f", valorImc)+ ", usted se encuentra"+ diagnostico);
+    model.addAttribute("resultado", "Su valor IMC es " +String.format("%.2f", valorImc)+ ", usted se encuentra "+ diagnostico);
         return "imc";
 }
 }
