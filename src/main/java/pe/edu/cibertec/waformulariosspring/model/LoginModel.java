@@ -1,13 +1,12 @@
 package pe.edu.cibertec.waformulariosspring.model;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import lombok.Getter;
+import lombok.Setter;
 
-@Controller
+@Getter
+@Setter
 public class LoginModel {
-    @GetMapping("/login")
-    public String login(){
 
-        return "login";
-    }
+    private String usuario;
+    private String password;
 }
